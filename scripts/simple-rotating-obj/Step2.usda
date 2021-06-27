@@ -1,0 +1,16 @@
+#usda 1.0
+(
+    "Step 2: Object Creation"
+    defaultPrim = "form"
+    endTimeCode = 192
+    startTimeCode = 0
+    upAxis = "Z"
+)
+
+def Xform "form"
+{
+    def Sphere "shape"
+    {
+    }
+}
+

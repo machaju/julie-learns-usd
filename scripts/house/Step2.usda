@@ -1,0 +1,14 @@
+#usda 1.0
+(
+    "Step 2: Object Creation"
+    endTimeCode = 192
+    startTimeCode = 0
+    upAxis = "Y"
+)
+
+def Xform "house" (
+    prepend references = @./house.usd@
+)
+{
+}
+
