@@ -16,7 +16,7 @@ The final animated shot is named `animated-{object}.usda`
 ## View in usdview
 
 ```
-usdview animates-sphere.usda 
+usdview animated-sphere.usda 
 ```
 
 ![Rotating Sphere](/images/rotating-sphere.gif "RotatingSphere")
