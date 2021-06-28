@@ -9,8 +9,9 @@
 
 def Xform "form"
 {
-    def Sphere "shape"
+    def Cube "shape"
     {
+        color3f[] primvars:displayColor = [(0, 1, 0)]
     }
 }
 

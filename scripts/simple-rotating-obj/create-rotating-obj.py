@@ -50,10 +50,10 @@ class AnimatedObject:
         fPrim = stage.GetPrimAtPath('/form')
         stage.SetDefaultPrim(fPrim)
 
-        # change color 
-        # sphereSchema = UsdGeom.Cube(shape)
-        # color = sphereSchema.GetDisplayColorAttr()
-        # color.Set([(0,0,1)])
+        #change color 
+        shapeSchema = self.objType(shape)
+        color = shapeSchema.GetDisplayColorAttr()
+        color.Set([(0,1,0)])
 
         stage.GetRootLayer().Save()
 
@@ -67,9 +67,12 @@ class AnimatedObject:
         spin.Set(time=0, value=0)
         spin.Set(time=192, value=1440)
 
+        # spiny = shape.AddRotateYOp(opSuffix='spin')
+        # spiny.Set(time=0, value=0)
+        # spiny.Set(time=192, value=1440)
 
     def Step3(self):
-        stage = self.MakeBaseStage('Step3.usda')
+        stage = self.MakeBaseStage('animated-{}.usda'.format(self.objName))
         stage.SetMetadata('comment', 'Step 3: Adding spin animation')
         shape = self.AddReferenceToShape(stage, '/form')
         self.AddSpin(shape)

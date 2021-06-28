@@ -1,0 +1,19 @@
+#usda 1.0
+(
+    "Step 3: Adding spin animation"
+    endTimeCode = 192
+    startTimeCode = 0
+    upAxis = "Y"
+)
+
+def Xform "house" (
+    prepend references = @./house.usd@
+)
+{
+    float xformOp:rotateY:spin.timeSamples = {
+        0: 0,
+        192: 1440,
+    }
+    uniform token[] xformOpOrder = ["xformOp:transform", "xformOp:rotateY:spin"]
+}
+

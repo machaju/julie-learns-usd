@@ -37,7 +37,7 @@ def AddSpin(shape):
 
 
 def Step3():
-    stage = MakeBaseStage('Step3.usda')
+    stage = MakeBaseStage('animated-house.usda')
     stage.SetMetadata('comment', 'Step 3: Adding spin animation')
     house = AddReferenceToGeometry(stage, '/house')
     AddSpin(house)

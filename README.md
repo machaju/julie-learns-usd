@@ -1,6 +1,8 @@
 # julie-learns-usd
 Okay, "learns" is a bit of a stretch.. Project to familiarize myself with USD 
 
+![Rotating Cube](/images/rotating-cube.gif "RotatingCube")
+
 
 ## Simple Object Rotations 
 [scripts/simple-rotating-obj](/scripts/simple-rotating-obj) contains a python files that creates a USDGeom object based off of user input and adds some rotation. 
